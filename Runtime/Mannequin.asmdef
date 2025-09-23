@@ -1,0 +1,17 @@
+{
+    "name": "Mannequin",
+    "rootNamespace": "Mannequin",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:057753802171c5848ad473d3682438d2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

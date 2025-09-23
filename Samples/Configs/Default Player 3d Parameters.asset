@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025eafb7c5f71a64bb721db0aa4c04ed, type: 3}
+  m_Name: Default Player 3d Parameters
+  m_EditorClassIdentifier: 
+  <AscentCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  <AscentTime>k__BackingField: 0.3
+  <MaxJumpForce>k__BackingField: 0.2
+  <DescentCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  <DescentTime>k__BackingField: 1.4
+  <VerticalTerminalVelocity>k__BackingField: -1
+  <AccelerationCurve>k__BackingField:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.9096987
+      outSlope: 2.9096987
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.056713562
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.0028877298
+      outSlope: 0.0028877298
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.60972506
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  <AccelerationTime>k__BackingField: 0.55
+  <WalkSpeed>k__BackingField: 1.75
+  <SprintSpeed>k__BackingField: 2.25
+  <Sensitivity>k__BackingField: 1
