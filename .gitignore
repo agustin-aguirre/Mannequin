@@ -1,0 +1,47 @@
+# Unity package-specific ignores
+
+# No guardar archivos generados de compilación
+*.csproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# MacOS / Windows / Linux metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Unity meta/debug
+*.bak
+*.tmp
+*.old
+*.orig
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+
+# Local dev artifacts (optional)
+*.local.json
+*.userprefs
+
+# Package Manager cache
+.npm/
+
+# Ignore potential temp files from editors
+*~
+
+# Optional: ignore UnityPackage export artifacts
+*.unitypackage
+
