@@ -41,7 +41,7 @@ namespace Mannequin.Locomotion
 		Vector3 currentVelocity = Vector3.zero;
 
 
-		private void Update()
+		private void FixedUpdate()
 		{
 			if (jumpAvailable && readPlayerIntentToJump() && !IsLocked)
 			{
@@ -95,16 +95,6 @@ namespace Mannequin.Locomotion
 				accelerationTimeDelta = 0f;
 			}
 
-			characterController.Move(currentVelocity);
-		}
-
-
-		private bool readPlayerIntentToJump()
-			=> playerInputs.MoveDirection.y > 0f;
-
-
-		private void FixedUpdate()
-		{
 			IsGrounded = checkIsGrounded();
 			jumpAvailable = IsGrounded;
 			processingJump &= !IsGrounded;
@@ -113,9 +103,16 @@ namespace Mannequin.Locomotion
 			else
 			{
 				if (applyGravity && !processingJump)
-					characterController.Move(Vector3.up * playerAttributes.VerticalTerminalVelocity);
+					currentVelocity += Vector3.up * playerAttributes.VerticalTerminalVelocity;
 			}
+
+			characterController.Move(currentVelocity);
 		}
+
+
+		private bool readPlayerIntentToJump()
+			=> playerInputs.MoveDirection.y > 0f;
+
 
 		private bool checkIsGrounded()
 		{
