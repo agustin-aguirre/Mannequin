@@ -5,11 +5,15 @@
 ```markdown
 # Changelog
 
-Todas las modificaciones notables a este proyecto se documentarán aquí.
+Todas las modificaciones notables a este proyecto se documentarï¿½n aquï¿½.
 
 El formato sigue [Keep a Changelog](https://keepachangelog.com/es/1.0.0/).
 
+## [1.0.0] - 2025-10-02
+### Agregado
+- Todo la locomociÃ³n se calcula en fixed update
+
 ## [1.0.0] - 2025-09-23
 ### Agregado
-- Versión inicial del paquete
-- Clases básicas iniciales y prefabs para prototipos 3d
+- Versiï¿½n inicial del paquete
+- Clases bï¿½sicas iniciales y prefabs para prototipos 3d
