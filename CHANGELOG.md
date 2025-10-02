@@ -9,7 +9,7 @@ Todas las modificaciones notables a este proyecto se documentar�n aqu�.
 
 El formato sigue [Keep a Changelog](https://keepachangelog.com/es/1.0.0/).
 
-## [0.0.2.1] - 2025-10-02
+## [0.0.3] - 2025-10-02
 ### Agregado
 - CORRECCIÓN: la locomoción utiliza fixedDeltaTime en lugar de deltaTime
 
