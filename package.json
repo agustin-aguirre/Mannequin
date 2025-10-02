@@ -1,6 +1,6 @@
 {
     "name": "com.averagedev.mannequin",
-    "version": "0.0.2",
+    "version": "0.0.2.1",
     "displayName": "Mannequin",
     "description": "Basic player movement and camera controls.",
     "unity": "6000.0",

@@ -56,13 +56,13 @@ namespace Mannequin.Locomotion
 				// are we going up?
 				if (!IsLocked && ascentTimeDelta < playerAttributes.AscentTime)
 				{
-					ascentTimeDelta = Mathf.Min(ascentTimeDelta + Time.deltaTime, playerAttributes.AscentTime);
+					ascentTimeDelta = Mathf.Min(ascentTimeDelta + Time.fixedDeltaTime, playerAttributes.AscentTime);
 					float ascentTimeProportion = ascentTimeDelta / playerAttributes.AscentTime;
 					currentVelocity.y = (1 - playerAttributes.AscentCurve.Evaluate(ascentTimeProportion)) * playerAttributes.MaxJumpForce;
 				}
 				else
 				{
-					descentTimeDelta = Mathf.Min(descentTimeDelta + Time.deltaTime, playerAttributes.DescentTime);
+					descentTimeDelta = Mathf.Min(descentTimeDelta + Time.fixedDeltaTime, playerAttributes.DescentTime);
 					float descentTimeProportion = descentTimeDelta / playerAttributes.DescentTime;
 					currentVelocity.y = playerAttributes.DescentCurve.Evaluate(descentTimeProportion) * playerAttributes.VerticalTerminalVelocity;
 				}
@@ -74,7 +74,7 @@ namespace Mannequin.Locomotion
 
 			if (!IsLocked && processingAcceleration)
 			{
-				accelerationTimeDelta = Mathf.Min(accelerationTimeDelta + Time.deltaTime, playerAttributes.AccelerationTime);
+				accelerationTimeDelta = Mathf.Min(accelerationTimeDelta + Time.fixedDeltaTime, playerAttributes.AccelerationTime);
 				float accelerationTimeProportion = accelerationTimeDelta / playerAttributes.AccelerationTime;
 				float targetSpeed = (playerInputs.Sprint ? playerAttributes.SprintSpeed : playerAttributes.WalkSpeed) / SPEED_CONST_MULT;    // la magnitud va a estar entre 1 (sticks a tope) y 0 (0.9, 0.4) en caso de no mandarle a tope
 				Vector2 horzInput = playerInputs.MoveDirection.CutY().normalized;
